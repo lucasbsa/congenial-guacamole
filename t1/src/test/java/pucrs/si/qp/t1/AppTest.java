@@ -31,7 +31,7 @@ public class AppTest
     public void testInvalido()
     {
         int actual = App.identificaTriangulo(6, 6, -7);
-        int expected = tipos.INVALIDO.value();
+        int expected = tipos.INVALIDO_IN.value();
         assertEquals(expected, actual);
     }
 
