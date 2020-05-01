@@ -1,4 +1,4 @@
-
+package pucrs.si.qp.t1;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
