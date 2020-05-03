@@ -21,8 +21,8 @@ public class App {
 				return tipos.EQUILATERO.value();
 			else if ((a != b) && (a != c) && (b != c))
 				return tipos.ESCALENO.value();
-			/*else if(a < 0 || b < 0 || c < 0)
-				return tipos.INVALIDO_IN.value();*/
+			else if(a < 0 || b < 0 || c < 0)
+				return tipos.INVALIDO_IN.value();
 			else
 				return tipos.ISOSCELES.value();
 			
