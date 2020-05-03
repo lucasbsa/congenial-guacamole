@@ -1,8 +1,7 @@
 package pucrs.si.qp.t1;
 import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
 import pucrs.si.qp.t1.*;
+import org.junit.Test;
 public class AppTest 
 {
 	@Test
@@ -29,17 +28,17 @@ public class AppTest
 	@Test
     public void testInvalido()
     {
-        int actual = App.identificaTriangulo(1, 2, 3);
+        int actual = App.identificaTriangulo(1, 2, -3);
         int expected = tipos.INVALIDO.value();
         assertEquals(expected, actual);
     }
 	
-	@Test
+	/*@Test
     public void testEntradaInvalido()
     {
         int actual = App.identificaTriangulo(6, -6, -7);
         int expected = tipos.INVALIDO_IN.value();
         assertEquals(expected, actual);
-    }
+    }*/
 
 }
