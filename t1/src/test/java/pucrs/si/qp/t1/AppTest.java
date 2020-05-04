@@ -92,6 +92,14 @@ public class AppTest
         assertEquals(expected, actual);
     }
 	
+	@Test
+    public void varianteDeSete()
+    {
+        int actual = App.identificaTriangulo(1, 3, 2);
+        int expected = tipos.INVALIDO.value();
+        assertEquals(expected, actual);
+    }
+	
 	
 
 }
