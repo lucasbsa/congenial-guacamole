@@ -40,5 +40,13 @@ public class AppTest
         int expected = tipos.INVALIDO_IN.value();
         assertEquals(expected, actual);
     }
+	
+	@Test
+    public void t1valido()
+    {
+        int actual = App.identificaTriangulo(2, 3, 4);
+        int expected = tipos.ESCALENO.value();
+        assertEquals(expected, actual);
+    }
 
 }
