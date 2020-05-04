@@ -62,6 +62,13 @@ public class AppTest
         int expected = tipos.ISOSCELES.value();
         assertEquals(expected, actual);
     }
+	@Test
+    public void varianteDe3()
+    {
+        int actual = App.identificaTriangulo(6, 7, 6);
+        int expected = tipos.ISOSCELES.value();
+        assertEquals(expected, actual);
+    }
 	
 	
 
