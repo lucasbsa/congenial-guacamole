@@ -69,7 +69,13 @@ public class AppTest
         int expected = tipos.ISOSCELES.value();
         assertEquals(expected, actual);
     }
-	
+	@Test
+    public void valorZero()
+    {
+        int actual = App.identificaTriangulo(8, 0, 9);
+        int expected = tipos.INVALIDO_IN.value();
+        assertEquals(expected, actual);
+    }
 	
 
 }
