@@ -25,7 +25,7 @@ public class App {
 				return tipos.ISOSCELES.value();
 			
 		}	
-		else if(a <= 0 || b <= 0 || c <= 0)
+		else if(a < 0 || b < 0 || c < 0 || (a > 0 && (b==0 || c==0))|| (b > 0 && (a==0 || c==0)||(c > 0 && (a==0 || b==0))))
 			return tipos.INVALIDO_IN.value();
 		
 		return tipos.INVALIDO.value();
