@@ -115,6 +115,16 @@ public class AppTest
         assertEquals(expected, actual);
     }
 	
+	@Test
+    public void todosOsZeros()
+    {
+        int actual = App.identificaTriangulo(0, 0, 0);
+        int expected = tipos.INVALIDO.value();
+        assertEquals(expected, actual);
+    }
+	
+	
+	
 	
 
 }
