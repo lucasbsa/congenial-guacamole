@@ -25,10 +25,11 @@ public class App {
 				return tipos.ISOSCELES.value();
 			
 		}	
-		else if(a < 0 || b < 0 || c < 0)
+		else if(a <= 0 || b <= 0 || c <= 0)
 			return tipos.INVALIDO_IN.value();
 		
 		return tipos.INVALIDO.value();
+
 	}
 
 	/**
@@ -54,11 +55,11 @@ public class App {
 			System.out.println("É: "+identificaTriangulo(6, 7, 6));
 
 		}
-		if(identificaTriangulo(8, 0, 9) == 5) {
+		//if(identificaTriangulo(8, 0, 9) == 5) {
 			System.out.println(" ENTRADA INVALIDA = 5");
-			System.out.println(" É : "+identificaTriangulo(8, 0, 9));
+			System.out.println(" o que é : "+identificaTriangulo(8, 0, 9));
 
-		}
+		//}
 		if(identificaTriangulo(2, 3, -4)== 5) {
 			System.out.println(" ENTRADA INVALIDA = 5");
 			System.out.println("É: "+identificaTriangulo(2, 3, -4));
