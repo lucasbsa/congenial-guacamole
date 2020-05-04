@@ -55,6 +55,13 @@ public class AppTest
         int expected = tipos.EQUILATERO.value();
         assertEquals(expected, actual);
     }
+	@Test
+    public void t3valido()
+    {
+        int actual = App.identificaTriangulo(6, 6, 7);
+        int expected = tipos.ISOSCELES.value();
+        assertEquals(expected, actual);
+    }
 	
 	
 
