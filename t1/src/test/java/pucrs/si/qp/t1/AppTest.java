@@ -123,6 +123,14 @@ public class AppTest
         assertEquals(expected, actual);
     }
 	
+	@Test
+    public void numerosReais()
+    {
+        int actual = App.identificaTriangulo(1/2, 3/4, 5);
+        int expected = tipos.INVALIDO_IN.value();
+        assertEquals(expected, actual);
+    }
+	
 	
 	
 	
