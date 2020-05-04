@@ -100,6 +100,14 @@ public class AppTest
         assertEquals(expected, actual);
     }
 	
+	@Test
+    public void linhaLonga()
+    {
+        int actual = App.identificaTriangulo(1, 2, 8);
+        int expected = tipos.INVALIDO.value();
+        assertEquals(expected, actual);
+    }
+	
 	
 
 }
